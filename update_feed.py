@@ -89,8 +89,9 @@ def ld_objects(node):
             yield from ld_objects(item)
     elif isinstance(node, dict):
         yield node
-        if "@graph" in node:
-            yield from ld_objects(node["@graph"])
+        for value in node.values():
+            if isinstance(value, (dict, list)):
+                yield from ld_objects(value)
 
 
 def types_include(node: dict, requested: str) -> bool:
