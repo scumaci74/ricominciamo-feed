@@ -69,6 +69,16 @@ class PageParser(HTMLParser):
 
 def fetch_html(url: str) -> str:
     response = SESSION.get(url, timeout=30)
+
+    print(f"URL richiesto: {url}", flush=True)
+    print(f"HTTP status: {response.status_code}", flush=True)
+    print(f"URL finale: {response.url}", flush=True)
+    print(f"Content-Type: {response.headers.get('content-type')}", flush=True)
+    print(f"Dimensione HTML: {len(response.content)} byte", flush=True)
+    print(f"JSON-LD presenti: {response.text.count('application/ld+json')}", flush=True)
+    print(f"ItemList presenti: {response.text.count('ItemList')}", flush=True)
+    print(f"Episodio di prova presente: {'grande-ancora-balnx6w0' in response.text}", flush=True)
+
     response.raise_for_status()
     return response.text
 
