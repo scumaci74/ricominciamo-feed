@@ -1,0 +1,55 @@
+
+name: Aggiorna Feed Ricominciamo
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ricominciamo-feed
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Update feed
+        shell: bash
+        run: |
+          for attempt in 1 2 3; do
+            if python update_feed.py; then
+              exit 0
+            fi
+            if [ "$attempt" -eq 3 ]; then
+              echo "Aggiornamento fallito dopo 3 tentativi" >&2
+              exit 1
+            fi
+            sleep 120
+          done
+
+      - name: Commit and push feed changes
+        shell: bash
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add feed.xml
+          if git diff --cached --quiet; then
+            echo "Nessun cambiamento da pubblicare"
+            exit 0
+          fi
+          git commit -m "Aggiorna feed Ricominciamo"
+          git pull --rebase origin main
+          git push origin main
