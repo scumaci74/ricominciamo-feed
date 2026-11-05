@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <title>Ricominciamo - Mattia Feltri</title>
+    <link>https://www.quotidiano.net/podcast/ricominciamo</link>
+    <description>Feed personale non ufficiale del podcast Ricominciamo di Mattia Feltri, pubblicato da QN.</description>
+    <language>it-IT</language>
+    <lastBuildDate>Thu, 05 Nov 2026 13:45:39 +0000</lastBuildDate>
+    <itunes:author>Mattia Feltri</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:image href="https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/YzQ3MGQyMDYtYzQyOC00/2/ricominciamo.webp" />
+    <image>
+      <url>https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/YzQ3MGQyMDYtYzQyOC00/2/ricominciamo.webp</url>
+      <title>Ricominciamo - Mattia Feltri</title>
+      <link>https://www.quotidiano.net/podcast/ricominciamo</link>
+    </image>
+    <item>
+      <title>Grande ancora</title>
+      <description>Come Donald Trump ha fatto l'America esattamente al contrario di come la voleva, cioÃ¨ l'America che tutti abbiamo amato</description>
+      <link>https://www.quotidiano.net/podcast/ricominciamo/grande-ancora-balnx6w0</link>
+      <guid isPermaLink="true">https://www.quotidiano.net/podcast/ricominciamo/grande-ancora-balnx6w0</guid>
+      <pubDate>Thu, 05 Nov 2026 05:30:00 +0000</pubDate>
+      <itunes:author>Mattia Feltri</itunes:author>
+      <itunes:duration>137</itunes:duration>
+      <itunes:image href="https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/NTgzNDA2NzgtNjU1My00/0/image.webp" />
+      <enclosure url="https://traffic.megaphone.fm/MNTHA9605792256.mp3?source=player" type="audio/mpeg" length="5678028" />
+    </item>
+  </channel>
+</rss>
