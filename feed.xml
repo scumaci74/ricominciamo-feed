@@ -5,7 +5,7 @@
     <link>https://www.quotidiano.net/podcast/ricominciamo</link>
     <description>Feed personale non ufficiale del podcast Ricominciamo di Mattia Feltri, pubblicato da QN.</description>
     <language>it-IT</language>
-    <lastBuildDate>Thu, 05 Nov 2026 13:45:39 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 07:00:58 +0000</lastBuildDate>
     <itunes:author>Mattia Feltri</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/YzQ3MGQyMDYtYzQyOC00/2/ricominciamo.webp" />
@@ -14,6 +14,17 @@
       <title>Ricominciamo - Mattia Feltri</title>
       <link>https://www.quotidiano.net/podcast/ricominciamo</link>
     </image>
+    <item>
+      <title>Lo stato bisca</title>
+      <description>La dipendenza da droga e quella da gioco d'azzardo. PerchÃ© lo Stato combatte la prima e sfrutta la seconda</description>
+      <link>https://www.quotidiano.net/podcast/ricominciamo/lo-stato-bisca-xtssp5l0</link>
+      <guid isPermaLink="true">https://www.quotidiano.net/podcast/ricominciamo/lo-stato-bisca-xtssp5l0</guid>
+      <pubDate>Fri, 06 Nov 2026 05:50:00 +0000</pubDate>
+      <itunes:author>Mattia Feltri</itunes:author>
+      <itunes:duration>138</itunes:duration>
+      <itunes:image href="https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/MTFlMDE0NzItYjVkNi00/0/image.webp" />
+      <enclosure url="https://traffic.megaphone.fm/MNTHA1254959461.mp3?source=player" type="audio/mpeg" length="5689498" />
+    </item>
     <item>
       <title>Grande ancora</title>
       <description>Come Donald Trump ha fatto l'America esattamente al contrario di come la voleva, cioÃ¨ l'America che tutti abbiamo amato</description>
