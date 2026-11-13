@@ -5,7 +5,7 @@
     <link>https://www.quotidiano.net/podcast/ricominciamo</link>
     <description>Feed personale non ufficiale del podcast Ricominciamo di Mattia Feltri, pubblicato da QN.</description>
     <language>it-IT</language>
-    <lastBuildDate>Thu, 12 Nov 2026 07:00:58 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 07:00:57 +0000</lastBuildDate>
     <itunes:author>Mattia Feltri</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/YzQ3MGQyMDYtYzQyOC00/2/ricominciamo.webp" />
@@ -14,6 +14,17 @@
       <title>Ricominciamo - Mattia Feltri</title>
       <link>https://www.quotidiano.net/podcast/ricominciamo</link>
     </image>
+    <item>
+      <title>Le bizzarre democrazie</title>
+      <description>Guerra e conti pubblici, che cosa tocca fare per proteggere il popolo (da sÃ© stesso)</description>
+      <link>https://www.quotidiano.net/podcast/ricominciamo/le-bizzarre-democrazie-kg2iktbf</link>
+      <guid isPermaLink="true">https://www.quotidiano.net/podcast/ricominciamo/le-bizzarre-democrazie-kg2iktbf</guid>
+      <pubDate>Fri, 13 Nov 2026 05:50:00 +0000</pubDate>
+      <itunes:author>Mattia Feltri</itunes:author>
+      <itunes:duration>132</itunes:duration>
+      <itunes:image href="https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/ZGFhNmIzYmEtNDI2MC00/0/image.webp" />
+      <enclosure url="https://traffic.megaphone.fm/MNTHA1922165336.mp3?source=player" type="audio/mpeg" length="5479463" />
+    </item>
     <item>
       <title>LâItalia secondo il clichÃ©</title>
       <description>Milano, ma anche Palermo, Napoli e Roma: ecco perchÃ© ci piace raccontare un paese stereotipato</description>
