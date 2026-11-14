@@ -5,7 +5,7 @@
     <link>https://www.quotidiano.net/podcast/ricominciamo</link>
     <description>Feed personale non ufficiale del podcast Ricominciamo di Mattia Feltri, pubblicato da QN.</description>
     <language>it-IT</language>
-    <lastBuildDate>Fri, 13 Nov 2026 07:00:57 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 07:01:05 +0000</lastBuildDate>
     <itunes:author>Mattia Feltri</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/YzQ3MGQyMDYtYzQyOC00/2/ricominciamo.webp" />
@@ -14,6 +14,17 @@
       <title>Ricominciamo - Mattia Feltri</title>
       <link>https://www.quotidiano.net/podcast/ricominciamo</link>
     </image>
+    <item>
+      <title>In fuga dal mondo</title>
+      <description>Ã difficile difendersi da Mikhail Andropov se il digitale ci fa tanta paura</description>
+      <link>https://www.quotidiano.net/podcast/ricominciamo/in-fuga-dal-mondo-xv371au1</link>
+      <guid isPermaLink="true">https://www.quotidiano.net/podcast/ricominciamo/in-fuga-dal-mondo-xv371au1</guid>
+      <pubDate>Sat, 14 Nov 2026 05:50:00 +0000</pubDate>
+      <itunes:author>Mattia Feltri</itunes:author>
+      <itunes:duration>138</itunes:duration>
+      <itunes:image href="https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/N2U4NjVmMTAtNDU5Yi00/0/image.webp" />
+      <enclosure url="https://traffic.megaphone.fm/MNTHA4723990365.mp3?source=player" type="audio/mpeg" length="5707223" />
+    </item>
     <item>
       <title>Le bizzarre democrazie</title>
       <description>Guerra e conti pubblici, che cosa tocca fare per proteggere il popolo (da sÃ© stesso)</description>
