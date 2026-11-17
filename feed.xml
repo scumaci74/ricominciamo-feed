@@ -5,7 +5,7 @@
     <link>https://www.quotidiano.net/podcast/ricominciamo</link>
     <description>Feed personale non ufficiale del podcast Ricominciamo di Mattia Feltri, pubblicato da QN.</description>
     <language>it-IT</language>
-    <lastBuildDate>Sat, 14 Nov 2026 07:01:05 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 07:00:56 +0000</lastBuildDate>
     <itunes:author>Mattia Feltri</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/YzQ3MGQyMDYtYzQyOC00/2/ricominciamo.webp" />
@@ -14,6 +14,17 @@
       <title>Ricominciamo - Mattia Feltri</title>
       <link>https://www.quotidiano.net/podcast/ricominciamo</link>
     </image>
+    <item>
+      <title>Giuseppe di Castiglia</title>
+      <description>Il Campo largo ha un problema: se Conte non vince le primarie, i suoi non votano per il centrosinistra</description>
+      <link>https://www.quotidiano.net/podcast/ricominciamo/giuseppe-di-castiglia-be9o5up7</link>
+      <guid isPermaLink="true">https://www.quotidiano.net/podcast/ricominciamo/giuseppe-di-castiglia-be9o5up7</guid>
+      <pubDate>Tue, 17 Nov 2026 05:50:00 +0000</pubDate>
+      <itunes:author>Mattia Feltri</itunes:author>
+      <itunes:duration>136</itunes:duration>
+      <itunes:image href="https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/YWU5NjNlYmItYTlhYS00/0/image.webp" />
+      <enclosure url="https://traffic.megaphone.fm/MNTHA5848161927.mp3?source=player" type="audio/mpeg" length="3430882" />
+    </item>
     <item>
       <title>In fuga dal mondo</title>
       <description>Ã difficile difendersi da Mikhail Andropov se il digitale ci fa tanta paura</description>
