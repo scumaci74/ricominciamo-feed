@@ -5,7 +5,7 @@
     <link>https://www.quotidiano.net/podcast/ricominciamo</link>
     <description>Feed personale non ufficiale del podcast Ricominciamo di Mattia Feltri, pubblicato da QN.</description>
     <language>it-IT</language>
-    <lastBuildDate>Tue, 17 Nov 2026 07:00:56 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 07:00:57 +0000</lastBuildDate>
     <itunes:author>Mattia Feltri</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/YzQ3MGQyMDYtYzQyOC00/2/ricominciamo.webp" />
@@ -14,6 +14,17 @@
       <title>Ricominciamo - Mattia Feltri</title>
       <link>https://www.quotidiano.net/podcast/ricominciamo</link>
     </image>
+    <item>
+      <title>L'attestato di virtÃ¹</title>
+      <description>PerchÃ© la legge contro l'antisemitismo Ã¨ sbagliata e forse persino dannosa</description>
+      <link>https://www.quotidiano.net/podcast/ricominciamo/lattestato-di-virtu-y7tjiuam</link>
+      <guid isPermaLink="true">https://www.quotidiano.net/podcast/ricominciamo/lattestato-di-virtu-y7tjiuam</guid>
+      <pubDate>Wed, 18 Nov 2026 05:50:00 +0000</pubDate>
+      <itunes:author>Mattia Feltri</itunes:author>
+      <itunes:duration>142</itunes:duration>
+      <itunes:image href="https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/YzM5OGFlMzMtMjRkYy00/0/image.webp" />
+      <enclosure url="https://traffic.megaphone.fm/MNTHA8165224862.mp3?source=player" type="audio/mpeg" length="3580023" />
+    </item>
     <item>
       <title>Giuseppe di Castiglia</title>
       <description>Il Campo largo ha un problema: se Conte non vince le primarie, i suoi non votano per il centrosinistra</description>
