@@ -5,7 +5,7 @@
     <link>https://www.quotidiano.net/podcast/ricominciamo</link>
     <description>Feed personale non ufficiale del podcast Ricominciamo di Mattia Feltri, pubblicato da QN.</description>
     <language>it-IT</language>
-    <lastBuildDate>Fri, 20 Nov 2026 07:00:57 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 07:00:53 +0000</lastBuildDate>
     <itunes:author>Mattia Feltri</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/YzQ3MGQyMDYtYzQyOC00/2/ricominciamo.webp" />
@@ -14,6 +14,17 @@
       <title>Ricominciamo - Mattia Feltri</title>
       <link>https://www.quotidiano.net/podcast/ricominciamo</link>
     </image>
+    <item>
+      <title>La foto di una debolezza</title>
+      <description>Come Xi, Trump e Putin sono riusciti a dire una cosa vera sul diritto internazionale</description>
+      <link>https://www.quotidiano.net/podcast/ricominciamo/la-foto-di-una-debolezza-f3okohxk</link>
+      <guid isPermaLink="true">https://www.quotidiano.net/podcast/ricominciamo/la-foto-di-una-debolezza-f3okohxk</guid>
+      <pubDate>Sat, 21 Nov 2026 05:50:00 +0000</pubDate>
+      <itunes:author>Mattia Feltri</itunes:author>
+      <itunes:duration>125</itunes:duration>
+      <itunes:image href="https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/ZGY1OGQ2YWYtMzUzZi00/0/image.webp" />
+      <enclosure url="https://traffic.megaphone.fm/MNTHA4734161574.mp3?source=player" type="audio/mpeg" length="2676978" />
+    </item>
     <item>
       <title>Le vette e gli abissi</title>
       <description>Quello che bisogna sapere di Pino Rauti, oltre i fasci e oltre le zecche</description>
