@@ -75,12 +75,46 @@ def fetch_html(url: str) -> str:
     print(f"URL finale: {response.url}", flush=True)
     print(f"Content-Type: {response.headers.get('content-type')}", flush=True)
     print(f"Dimensione HTML: {len(response.content)} byte", flush=True)
-    print(f"JSON-LD presenti: {response.text.count('application/ld+json')}", flush=True)
-    print(f"ItemList presenti: {response.text.count('ItemList')}", flush=True)
-    print(f"Episodio di prova presente: {'grande-ancora-balnx6w0' in response.text}", flush=True)
 
     response.raise_for_status()
-    return response.text
+    try:
+        html = response.content.decode("utf-8-sig")
+    except UnicodeDecodeError as exc:
+        raise RuntimeError(f"La pagina QN non è UTF-8 valida: {url}") from exc
+
+    print(f"JSON-LD presenti: {html.count('application/ld+json')}", flush=True)
+    print(f"ItemList presenti: {html.count('ItemList')}", flush=True)
+    print(f"Episodio di prova presente: {'grande-ancora-balnx6w0' in html}", flush=True)
+    return html
+
+
+def _mojibake_score(value: str) -> int:
+    """Count characters that normally reveal UTF-8 decoded as a legacy encoding."""
+    markers = sum(value.count(char) for char in ("Ã", "Â", "â", "ð", "�"))
+    controls = sum("\u0080" <= char <= "\u009f" for char in value)
+    return markers + controls
+
+
+def repair_mojibake(value: str) -> str:
+    """Repair one or more conservative UTF-8/Latin-1 or UTF-8/CP1252 mix-ups."""
+    current = value
+    for _ in range(3):
+        current_score = _mojibake_score(current)
+        if current_score == 0:
+            break
+
+        candidates = [current]
+        for legacy_encoding in ("latin-1", "cp1252"):
+            try:
+                candidates.append(current.encode(legacy_encoding).decode("utf-8"))
+            except (UnicodeEncodeError, UnicodeDecodeError):
+                pass
+
+        best = min(candidates, key=_mojibake_score)
+        if _mojibake_score(best) >= current_score:
+            break
+        current = best
+    return current
 
 
 def ld_objects(node):
@@ -122,8 +156,8 @@ def series_episodes(html: str) -> list[dict]:
                     continue
                 candidates.append({
                     "url": urljoin(SERIES_URL, str(link)).split("#")[0],
-                    "title": episode.get("name") or "Senza titolo",
-                    "description": episode.get("description") or "",
+                    "title": repair_mojibake(str(episode.get("name") or "Senza titolo")),
+                    "description": repair_mojibake(str(episode.get("description") or "")),
                     "date": episode.get("datePublished") or "",
                     "image": (episode.get("image") or {}).get("url", "")
                     if isinstance(episode.get("image"), dict)
@@ -152,31 +186,37 @@ def parse_date(date: str) -> datetime:
             return datetime(1970, 1, 1, tzinfo=timezone.utc)
 
 
-def read_existing() -> dict[str, dict]:
+def read_existing() -> tuple[dict[str, dict], int]:
     if not FEED_PATH.exists():
-        return {}
+        return {}, 0
     try:
         root = ET.parse(FEED_PATH).getroot()
     except ET.ParseError as exc:
         raise RuntimeError("Il feed esistente non è XML valido: non lo sovrascrivo") from exc
     result = {}
+    repaired_fields = 0
     for item in root.findall("./channel/item"):
         guid = item.findtext("guid")
         audio = item.find("enclosure")
         if not guid or audio is None or not audio.get("url"):
             continue
         image = item.find(f"{{{ITUNES}}}image")
+        old_title = item.findtext("title", "")
+        old_description = item.findtext("description", "")
+        title = repair_mojibake(old_title)
+        description = repair_mojibake(old_description)
+        repaired_fields += int(title != old_title) + int(description != old_description)
         result[guid] = {
             "url": guid,
-            "title": item.findtext("title", ""),
-            "description": item.findtext("description", ""),
+            "title": title,
+            "description": description,
             "date": item.findtext("pubDate", ""),
             "audio": audio.get("url"),
             "duration": item.findtext(f"{{{ITUNES}}}duration", ""),
             "image": image.get("href", "") if image is not None else COVER_URL,
             "length": int(audio.get("length") or 0),
         }
-    return result
+    return result, repaired_fields
 
 
 def audio_length(url: str) -> int:
@@ -251,7 +291,7 @@ def make_feed(episodes: dict[str, dict]) -> bytes:
 
 
 def main() -> int:
-    existing = read_existing()
+    existing, repaired_fields = read_existing()
     listing = series_episodes(fetch_html(SERIES_URL))
     if not listing:
         raise RuntimeError("Nessun episodio trovato nel JSON-LD ItemList: lascio intatto feed.xml")
@@ -277,13 +317,16 @@ def main() -> int:
             "image": episode.get("image") or artwork or COVER_URL,
         }
         added += 1
-    if added == 0 and FEED_PATH.exists():
+    if added == 0 and repaired_fields == 0 and FEED_PATH.exists():
         print(f"Nessun nuovo episodio. Trovati {len(listing)} collegamenti; feed invariato.")
         return 0
     if not existing:
         raise RuntimeError("Nessun episodio valido: feed non generato")
     FEED_PATH.write_bytes(make_feed(existing))
-    print(f"Feed aggiornato: {added} nuove puntate, {len(existing)} totali")
+    print(
+        f"Feed aggiornato: {added} nuove puntate, "
+        f"{repaired_fields} campi di testo corretti, {len(existing)} totali"
+    )
     return 0
 
 
