@@ -5,7 +5,7 @@
     <link>https://www.quotidiano.net/podcast/ricominciamo</link>
     <description>Feed personale non ufficiale del podcast Ricominciamo di Mattia Feltri, pubblicato da QN.</description>
     <language>it-IT</language>
-    <lastBuildDate>Tue, 24 Nov 2026 22:11:19 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 07:00:56 +0000</lastBuildDate>
     <itunes:author>Mattia Feltri</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/YzQ3MGQyMDYtYzQyOC00/2/ricominciamo.webp" />
@@ -14,6 +14,17 @@
       <title>Ricominciamo - Mattia Feltri</title>
       <link>https://www.quotidiano.net/podcast/ricominciamo</link>
     </image>
+    <item>
+      <title>Il gorgonzola di Nietzsche</title>
+      <description>Le parole che usiamo sono diventate le parole con cui ci inganniamo</description>
+      <link>https://www.quotidiano.net/podcast/ricominciamo/il-gorgonzola-di-nietzsche-ah8oqnqp</link>
+      <guid isPermaLink="true">https://www.quotidiano.net/podcast/ricominciamo/il-gorgonzola-di-nietzsche-ah8oqnqp</guid>
+      <pubDate>Wed, 25 Nov 2026 05:50:00 +0000</pubDate>
+      <itunes:author>Mattia Feltri</itunes:author>
+      <itunes:duration>137</itunes:duration>
+      <itunes:image href="https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/M2ZlNjhkMGItM2QwZC00/0/image.webp" />
+      <enclosure url="https://traffic.megaphone.fm/MNTHA5681540142.mp3?source=player" type="audio/mpeg" length="2920410" />
+    </item>
     <item>
       <title>Se c’è una logica</title>
       <description>Una piccola vicenda spiega l’Italia da Falcone e Borsellino fino a De Gennaro</description>
