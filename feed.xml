@@ -5,7 +5,7 @@
     <link>https://www.quotidiano.net/podcast/ricominciamo</link>
     <description>Feed personale non ufficiale del podcast Ricominciamo di Mattia Feltri, pubblicato da QN.</description>
     <language>it-IT</language>
-    <lastBuildDate>Fri, 27 Nov 2026 07:00:54 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 07:00:54 +0000</lastBuildDate>
     <itunes:author>Mattia Feltri</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/YzQ3MGQyMDYtYzQyOC00/2/ricominciamo.webp" />
@@ -14,6 +14,17 @@
       <title>Ricominciamo - Mattia Feltri</title>
       <link>https://www.quotidiano.net/podcast/ricominciamo</link>
     </image>
+    <item>
+      <title>L'inedita sintonia</title>
+      <description>Una cosa (falsa) su cui Schlein e Meloni vanno perfettamente d'accordo</description>
+      <link>https://www.quotidiano.net/podcast/ricominciamo/linedita-sintonia-xe13c1ko</link>
+      <guid isPermaLink="true">https://www.quotidiano.net/podcast/ricominciamo/linedita-sintonia-xe13c1ko</guid>
+      <pubDate>Sat, 28 Nov 2026 05:50:58 +0000</pubDate>
+      <itunes:author>Mattia Feltri</itunes:author>
+      <itunes:duration>152</itunes:duration>
+      <itunes:image href="https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/MzNhZDEyYjAtMWQ1NS00/0/image.webp" />
+      <enclosure url="https://traffic.megaphone.fm/MNTHA4429038325.mp3?source=player" type="audio/mpeg" length="3214538" />
+    </item>
     <item>
       <title>Piccola storia di padroni e servi</title>
       <description>Come Giorgia Meloni si è dichiarata la regina del Parlamento</description>
